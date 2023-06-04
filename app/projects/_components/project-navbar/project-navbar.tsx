@@ -1,10 +1,8 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import Image from "next/image";
-import Link from "next/link";
 
-import sun from "../../../public/sunny.png";
+import Link from "next/link";
 
 import styles from "./styles.module.css";
 
@@ -15,37 +13,24 @@ type navlink = {
 
 const navlinks: navlink[] = [
   {
-    href: "/projects",
-    name: "Projects",
+    href: "/projects/ailearners",
+    name: "AI-Learners",
   },
   {
-    href: "/about",
-    name: "About",
+    href: "/projects/meta",
+    name: "Meta",
   },
   {
-    href: "/resume",
-    name: "Resume",
-  },
-  {
-    href: "/fun",
-    name: "Fun",
+    href: "/projects/jnj",
+    name: "Johnson & Johnson",
   },
 ];
 
-export default function Navbar() {
+export default function ProjectNavbar() {
   const pathname = usePathname();
   return (
-    <nav className={styles.navbar}>
-      <Link className={styles.logo} href="/">
-        ✿ Larina Fu
-      </Link>
-      <button className={styles.themebtn}>
-        <Image
-          className={styles.themeimg}
-          src={sun}
-          alt="sun for light mode"
-        ></Image>
-      </button>
+    <nav>
+      <span>Projects:</span>
       <ul className={styles.navlinks}>
         {navlinks.map((link) => {
           const isActive = pathname.startsWith(link.href) && link.href !== "/";

@@ -1,0 +1,19 @@
+.cardContainer {
+    display:block;
+    width: fit-content;
+}
+
+.card {
+    border: .1rem solid black;
+    /* border-radius: 1rem; */
+    width: 45vw;
+}
+
+.card * {
+    text-decoration: none;
+}
+
+.card:hover {
+    border: .1rem solid var(--dark-pink);
+    color: var(--dark-pink);
+}

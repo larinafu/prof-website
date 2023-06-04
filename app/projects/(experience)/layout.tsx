@@ -1,4 +1,4 @@
-import ProjectNavbar from "./_components/projectNavbar"
+import ProjectNavbar from "../_components/project-navbar/project-navbar"
 
 export default function ProjectLayout({
     children,

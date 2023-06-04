@@ -1,0 +1,49 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--bigger);
+}
+
+.navbar * {
+    text-decoration: none;
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.navlinks > *,
+.logo {
+    color: var(--dark-pink);
+    margin: .5rem;
+    padding: .5rem;
+    list-style-type: none;
+}
+
+.unactive {
+    color: var(--dark-pink);
+}
+
+.unactive:hover,
+.logo:hover {
+    color: var(--gray);
+    cursor: pointer;
+}
+
+.active {
+    color: var(--black);
+}
+
+.themebtn {
+    border: none;
+    background-color: transparent;
+}
+
+.themeimg {
+    width: 2rem;
+    height: 2rem;
+}
